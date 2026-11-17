@@ -1,9 +1,3 @@
 [build]
-  publish = "public"
+  publish = "."
   functions = "netlify/functions"
-
-[[redirects]]
-  from = "/api/storefront"
-  to = "/.netlify/functions/storefront"
-  status = 200
-  force = true
