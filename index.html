@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B1530">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8D%AB%3C/text%3E%3C/svg%3E">
+<title>DEPPER — Chocolate fondue mugs</title>
+<meta name="description" content="DEPPER chocolate fondue mugs: a ceramic mug with a tea light chamber and a dipping fork.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav" id="nav"><div class="wrap">
+  <button class="ib burger" id="bg" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <a class="logo" href="#home" aria-label="DEPPER home">DEPPER</a>
+  <nav aria-label="Main"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About Us</a><a href="#contact">Contact</a></nav>
+  <div class="icons">
+    <button class="ib" id="sb" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></button>
+    <a class="ib" id="acc" target="_blank" rel="noopener" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20c1-4 4-6 7.500-6s6.500 2 7.500 6"/></svg></a>
+    <button class="ib" id="wl" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 20s-7.500-4.500-7.500-10A4.300 4.300 0 0 1 12 7.500 4.300 4.300 0 0 1 19.500 10c0 5.500-7.500 10-7.500 10z"/></svg><span class="badge" id="wlc"></span></button>
+    <button class="ib" id="ct" aria-label="Open cart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6.500a3 3 0 0 1 6 0V8"/></svg><span class="badge" id="cc"></span></button>
+  </div>
+</div>
+<div id="sbar" hidden><div class="wrap"><input id="sq" type="search" placeholder="Search products" aria-label="Search products" autocomplete="off"><div id="sres" hidden></div></div></div>
+</header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+  <div>
+    <h1 class="in">Chocolate, warmed at the table.</h1>
+    <p class="in">A ceramic fondue mug with a tea light chamber below and a dipping fork at the handle. Melt, dip, share.</p>
+    <a class="btn white in" href="#shop">Shop now</a>
+  </div>
+  <div class="hcard"><img id="himg" alt="DEPPER chocolate fondue mugs in red, white and brown, each with a tea light and dipping fork" width="900" height="850"></div>
+</div></section>
+
+<section class="light" id="shop"><div class="wrap">
+  <div class="bar"><h2>The collection</h2><label class="muted" id="sortw" hidden>Sort&nbsp;<select id="sort"><option value="">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option><option value="az">Name: A–Z</option></select></label></div>
+  <div class="grid" id="grid" hidden></div>
+  <div id="pd" class="pd" aria-live="polite"></div>
+  <div id="rel" hidden style="margin-top:56px"><h3>You may also like</h3><div class="grid" id="relg"></div></div>
+</div></section>
+
+<section class="navy" id="about"><div class="wrap split">
+  <div><h2>Dessert you finish together.</h2>
+  <p class="muted">DEPPER designs tabletop pieces that turn a small moment into an occasion. Our fondue mugs hold melted chocolate over a tea light, so it stays ready for strawberries, marshmallows and biscuits.</p></div>
+  <img id="aimg" alt="Pouring melted chocolate into a white DEPPER fondue mug beside a red one" width="900" height="900" loading="lazy">
+</div></section>
+
+<section class="navy" id="reviews" style="background:var(--navy)"><div class="wrap center">
+  <h2>REAL PEOPLE. REAL EXPERIENCES.</h2>
+  <div class="empty"><h3>No reviews yet</h3><p>Reviews appear here once customers share them and we have approved them. Bought a DEPPER mug? Tell us how it went.</p></div>
+  <div class="row"><button class="btn ghost" id="rall" disabled>Read all reviews</button><button class="btn white" id="rw">Write a review</button></div>
+</div></section>
+
+<section style="background:var(--black)"><div class="wrap">
+  <h2>Why choose DEPPER</h2>
+  <div class="why">
+    <div><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><h3>Secure payments</h3><p>Payment is handled on Shopify’s hosted checkout. We never see your card details.</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.500" r="1.500"/><circle cx="17" cy="17.500" r="1.500"/></svg><h3>Shipping</h3><p>Delivery options and rates are calculated at checkout for your address.</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 3-6.200M4 4v4h4"/></svg><h3>Returns</h3><p>Our return policy is published in the store policies before you buy.</p></div>
+    <div><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg><h3>Customer support</h3><p>Questions about an order or a product? Contact us and we’ll help.</p></div>
+  </div>
+</div></section>
+
+<section class="light" id="faq"><div class="wrap" style="max-width:780px">
+  <h2 style="margin-bottom:28px">Questions</h2><div id="faqs"></div>
+</div></section>
+
+<section class="navy" id="contact"><div class="wrap center">
+  <h2>Stay in the loop</h2><p class="muted">New colors and tabletop pieces, sent rarely.</p>
+  <form class="nl" id="nl" novalidate><input type="email" id="em" placeholder="Email address" aria-label="Email address" required><button class="btn white" type="submit">Subscribe</button></form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div><a class="logo" href="#home" style="padding:0">DEPPER</a><p class="muted">Tabletop pieces for sharing dessert.</p></div>
+    <div><h4>Company</h4><ul><li><a href="#about">About Us</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div><h4>Customer service</h4><ul><li><a data-pol="shipping-policy" target="_blank" rel="noopener">Shipping information</a></li><li><a data-pol="refund-policy" target="_blank" rel="noopener">Return policy</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a data-pol="privacy-policy" target="_blank" rel="noopener">Privacy policy</a></li><li><a data-pol="terms-of-service" target="_blank" rel="noopener">Terms and conditions</a></li></ul></div>
+  </div>
+  <p class="legal">© DEPPER. Social links are added in CONTENT.social once your accounts are ready.</p>
+</div></footer>
+
+<div id="ov"></div>
+<aside id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <header><h3>Your cart</h3><button id="cx" aria-label="Close cart">×</button></header>
+  <div id="lines"></div>
+  <div id="sum"></div>
+</aside>
+<div id="toast" role="status"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
