@@ -112,7 +112,7 @@ $('#sq').oninput=e=>{const q=e.target.value.trim().toLowerCase(),r=$('#sres');if
  const m=S.products.filter(p=>p.title.toLowerCase().includes(q));r.hidden=false;r.innerHTML=m.length?m.map(p=>`<button data-p="${esc(p.id)}">${esc(p.title)}</button>`).join(''):'<button disabled>No products found. Try another word.</button>'};
 $('#nl').onsubmit=e=>{e.preventDefault();const v=$('#em').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v))return toast('Enter a valid email address.');toast('Newsletter sign-up isn’t connected yet. Nothing was submitted.')};
 /* ---- Init ---- */
-$('#himg').src=IMG[1];$('#aimg').src=IMG[2];
+$('#himg').src='37976CF3-9FA8-447F-B5F2-3A43721D5848.png';$('#aimg').src=IMG[2];
 $('#acc').href=`https://${CONFIG.domain}/account`;
 document.querySelectorAll('[data-pol]').forEach(a=>a.href=`https://${CONFIG.domain}/policies/${a.dataset.pol}`);
 $('#faqs').innerHTML=CONTENT.faq.map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('');
