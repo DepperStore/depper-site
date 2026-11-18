@@ -44,7 +44,12 @@ section{padding:72px 0}
 .hero p{max-width:30em;color:var(--gray);font-size:1.1rem;margin:20px 0 32px}
 .hero h1{max-width:9em}
 .hcard{background:var(--black);border-radius:10px;box-shadow:0 30px 70px #000a,0 0 0 1px #ffffff1f;overflow:hidden}
-.hcard img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 55%}@media(min-width:860px){.hcard img{aspect-ratio:4/5}}
+.hcard img{
+width:100%;
+aspect-ratio:3/4;
+object-fit:contain;
+object-position:center;
+}
 @media(min-width:860px){.hero .wrap{grid-template-columns:1.1fr .9fr}.hero{padding:96px 0}}
 @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 @keyframes fade{from{opacity:0;transform:scale(1.04)}to{opacity:1;transform:none}}
